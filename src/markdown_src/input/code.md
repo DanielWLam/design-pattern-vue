@@ -1,5 +1,21 @@
+# 字体
+字体的选择，要保证在不同的平台下都能有最佳的展示效果。
+
+字体是网页中最基本也是最重要的构成之一，用户通过字体理解网站想要传达的信息，是网站与人交互的重要输出手段。
+
+## 字形
+在字体的选择上，推荐使用以下规则，
 ```css
-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
-        SimSun, sans-serif;
+{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+    SimSun, sans-serif;
+}
 ```
+## 字号
+字号的不同，决定了想要传达信息的重要性的不同。默认字体为```12px``或```14px```，
+对于中后台系统，选择```12px``可以保证在视觉上，系统比较精致。
+对于展示型的页面，选择```14px``大小的字体保障了可阅读性。
+
+## 字体颜色
+字体颜色的选择一定要考虑字体所在背景的颜色，简单来说就是```浅背景深字体，深背景浅字体``

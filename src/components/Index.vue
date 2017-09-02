@@ -5,7 +5,7 @@
     <div class="choose">
       <router-link to="admin">
         <div class="btn">
-          <img src="https://zos.alipayobjects.com/rmsportal/LvYKhbKsPzIRLGsBxUJA.png" alt="img" class="img" />
+          <img src="http://git.cn-hangzhou.oss-cdn.aliyun-inc.com/uploads/yes/fact/3e87b6d51f089555a64f007c23ed587e/image.png" alt="img" class="img" />
           中后台网站
         </div>
       </router-link>
@@ -117,6 +117,7 @@ export default {
         transition: all .45s ease-in-out;
         float:left;
         position: relative;
+        overflow: hidden;
         img {
           width: 226px;
           display: block;

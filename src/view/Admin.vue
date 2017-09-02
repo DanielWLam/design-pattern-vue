@@ -44,8 +44,8 @@
     height: 60px;
     background-color: #ffffff;
     color: #108ee9;
-    line-height: 28px;
-    padding: 16px;
+    line-height: 60px;
+    padding: 0 24px;
     font-weight: 200;
     margin-bottom: 24px;
   }

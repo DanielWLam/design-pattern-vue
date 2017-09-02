@@ -6,6 +6,9 @@ import router from './router'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
 import './assets/style.less'
+import './assets/github-markdown.css'
+import './assets/pilcrow.css'
+import './assets/hljs-github.min.css'
 
 Vue.config.productionTip = false
 Vue.use(iView)

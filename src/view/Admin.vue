@@ -3,7 +3,7 @@
     <Row>
       <Col span="24">
         <div class="header shadow">
-          FACT设计规范
+          <router-link :to="{name: 'index'}">FACT设计规范</router-link>
         </div>
       </Col>
     </Row>
@@ -11,19 +11,19 @@
       <Row>
         <Col span="3">
           <Menu active-name="welcome" width="auto">
-            <router-link to="welcome">
+            <router-link :to="{name: 'welcome'}">
               <MenuItem name="welcome">欢迎！</MenuItem>
             </router-link>
             <MenuGroup title="三大基石">
-              <router-link to="font">
+              <router-link :to="{name: 'font'}">
                 <MenuItem name="font">
                   字体
                 </MenuItem>
               </router-link>
-              <router-link to="margin">
+              <router-link :to="{name: 'margin'}">
                 <MenuItem name="margin">间距</MenuItem>
               </router-link>
-              <router-link to="color">
+              <router-link :to="{name: 'color'}">
                 <MenuItem name="color">色彩</MenuItem>
               </router-link>
             </MenuGroup>

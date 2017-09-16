@@ -3,30 +3,41 @@
     <Row>
       <Col span="24">
         <div class="header shadow">
-          FACT设计规范
+          <router-link :to="{name: 'index'}">FACT设计规范</router-link>
         </div>
       </Col>
     </Row>
     <div class="content shadow">
       <Row>
         <Col span="3">
-          <Menu active-name="welcome" width="auto">
-            <router-link to="welcome">
+          <Menu active-name="welcome" width="auto" :open-names="['threeBase', 'pattern']">
+            <router-link :to="{name: 'welcome'}">
               <MenuItem name="welcome">欢迎！</MenuItem>
             </router-link>
-            <MenuGroup title="三大基石">
-              <router-link to="font">
+            <Submenu name="threeBase">
+              <template slot="title">
+                <Icon type="ios-paper"></Icon>
+                三大基石
+              </template>
+              <router-link :to="{name: 'font'}">
                 <MenuItem name="font">
                   字体
                 </MenuItem>
               </router-link>
-              <router-link to="margin">
+              <router-link :to="{name: 'margin'}">
                 <MenuItem name="margin">间距</MenuItem>
               </router-link>
-              <router-link to="color">
+              <router-link :to="{name: 'color'}">
                 <MenuItem name="color">色彩</MenuItem>
               </router-link>
-            </MenuGroup>
+            </Submenu>
+            <MenuItem name="layout">布局</MenuItem>
+            <Submenu name="pattern">
+              <template slot="title">
+                设计原则
+              </template>
+              <MenuItem name="closeTheory">亲密性原理</MenuItem>
+            </Submenu>
           </Menu>
         </Col>
         <Col span="21">

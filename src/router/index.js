@@ -20,24 +20,25 @@ export default new Router({
       path: '/admin',
       name: 'admin',
       component: Admin,
+      redirect: {name: 'welcome'},
       children: [
         {
-          path: '/welcome',
+          path: 'welcome',
           name: 'welcome',
           component: Welcome
         },
         {
-          path: '/font',
+          path: 'font',
           name: 'font',
           component: Font
         },
         {
-          path: '/margin',
+          path: 'margin',
           name: 'margin',
           component: Margin
         },
         {
-          path: '/color',
+          path: 'color',
           name: 'color',
           component: Color
         }

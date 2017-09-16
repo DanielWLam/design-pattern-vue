@@ -3,7 +3,7 @@
     <canvas id="bgCanvas"></canvas>
     <p class="title">设计规范</p>
     <div class="choose">
-      <router-link to="admin">
+      <router-link :to="{name: 'admin'}">
         <div class="btn">
           <img src="http://git.cn-hangzhou.oss-cdn.aliyun-inc.com/uploads/yes/fact/3e87b6d51f089555a64f007c23ed587e/image.png" alt="img" class="img" />
           中后台网站

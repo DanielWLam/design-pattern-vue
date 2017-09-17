@@ -56,11 +56,18 @@
               <template slot="title">
                 设计原则
               </template>
-              <MenuItem name="closeTheory">相关性原则</MenuItem>
-              <MenuItem name="repeat">复用</MenuItem>
-              <MenuItem name="align">对齐</MenuItem>
-              <MenuItem name="transition">过渡动画</MenuItem>
-              <MenuItem name="reaction">即时反应</MenuItem>
+              <router-link :to="{name: 'close'}">
+                <MenuItem name="closeTheory">相关性原则</MenuItem>
+              </router-link>
+              <router-link :to="{name: 'repeat'}">
+                <MenuItem name="repeat">重复性原理</MenuItem>
+              </router-link>
+              <router-link :to="{name: 'align'}">
+                <MenuItem name="align">对齐</MenuItem>
+              </router-link>
+              <router-link :to="{name: 'reaction'}">
+                <MenuItem name="reaction">即时反应</MenuItem>
+              </router-link>
             </Submenu>
           </Menu>
         </Col>

@@ -13,6 +13,10 @@ import Table from '@/view/Table'
 import Card from '@/view/Card'
 import Animate from '@/view/Animate'
 import Light from '@/view/Light'
+import Close from '@/view/Close'
+import Repeat from '@/view/Repeat'
+import Align from '@/view/Align'
+import Reaction from '@/view/Reaction'
 
 Vue.use(Router)
 
@@ -83,6 +87,26 @@ export default new Router({
           path: 'light',
           name: 'light',
           component: Light
+        },
+        {
+          path: 'close',
+          name: 'close',
+          component: Close
+        },
+        {
+          path: 'repeat',
+          name: 'repeat',
+          component: Repeat
+        },
+        {
+          path: 'align',
+          name: 'align',
+          component: Align
+        },
+        {
+          path: 'reaction',
+          name: 'reaction',
+          component: Reaction
         }
       ]
     }

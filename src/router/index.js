@@ -6,6 +6,13 @@ import Welcome from '@/view/Welcome'
 import Font from '@/view/Font'
 import Margin from '@/view/Margin'
 import Color from '@/view/Color'
+import Layout from '@/view/Layout'
+import Text from '@/view/Text'
+import Dialog from '@/view/Dialog'
+import Table from '@/view/Table'
+import Card from '@/view/Card'
+import Animate from '@/view/Animate'
+import Light from '@/view/Light'
 
 Vue.use(Router)
 
@@ -41,6 +48,41 @@ export default new Router({
           path: 'color',
           name: 'color',
           component: Color
+        },
+        {
+          path: 'layout',
+          name: 'layout',
+          component: Layout
+        },
+        {
+          path: 'text',
+          name: 'text',
+          component: Text
+        },
+        {
+          path: 'dialog',
+          name: 'dialog',
+          component: Dialog
+        },
+        {
+          path: 'table',
+          name: 'table',
+          component: Table
+        },
+        {
+          path: 'card',
+          name: 'card',
+          component: Card
+        },
+        {
+          path: 'animate',
+          name: 'animate',
+          component: Animate
+        },
+        {
+          path: 'light',
+          name: 'light',
+          component: Light
         }
       ]
     }

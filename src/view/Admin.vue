@@ -31,13 +31,27 @@
                 <MenuItem name="color">色彩</MenuItem>
               </router-link>
             </Submenu>
-            <MenuItem name="layout">布局</MenuItem>
-            <MenuItem name="text">文案</MenuItem>
-            <MenuItem name="dialog">对话框</MenuItem>
-            <MenuItem name="table">表格</MenuItem>
-            <MenuItem name="card">卡片式设计</MenuItem>
-            <MenuItem name="animate">动画</MenuItem>
-            <MenuItem name="light">光与阴影</MenuItem>
+            <router-link :to="{name: 'layout'}">
+              <MenuItem name="layout">布局</MenuItem>
+            </router-link>
+            <router-link :to="{name: 'text'}">
+              <MenuItem name="text">文案</MenuItem>
+            </router-link>
+            <router-link :to="{name: 'dialog'}">
+              <MenuItem name="dialog">对话框</MenuItem>
+            </router-link>
+            <router-link :to="{name: 'table'}">
+              <MenuItem name="table">表格</MenuItem>
+            </router-link>
+            <router-link :to="{name: 'card'}">
+              <MenuItem name="card">卡片式设计</MenuItem>
+            </router-link>
+            <router-link :to="{name: 'animate'}">
+              <MenuItem name="animate">动画</MenuItem>
+            </router-link>
+            <router-link :to="{name: 'light'}">
+              <MenuItem name="light">光与阴影</MenuItem>
+            </router-link>
             <Submenu name="pattern">
               <template slot="title">
                 设计原则

@@ -21,7 +21,7 @@
         <p>字体颜色的选择一定要考虑字体所在背景的颜色，简单来说就是<code>浅背景深字体，深背景浅字体</code></p>
       </Col>
       <Col span="12" style="text-align: center;">
-        <img src="http://git.cn-hangzhou.oss-cdn.aliyun-inc.com/uploads/yes/fact/85684007d9c9ed424d56b522f4d83d65/image.png" alt="img">
+        <img src="https://user-images.githubusercontent.com/8369212/30510681-1c54ae2a-9afb-11e7-81f5-4cdb9d1f01f1.png" alt="img">
       </Col>
     </Row>
   </div>

@@ -5,7 +5,7 @@
     <div class="choose">
       <router-link :to="{name: 'admin'}">
         <div class="btn">
-          <img src="http://git.cn-hangzhou.oss-cdn.aliyun-inc.com/uploads/yes/fact/3e87b6d51f089555a64f007c23ed587e/image.png" alt="img" class="img" />
+          <img src="https://user-images.githubusercontent.com/8369212/30510678-fdf96bd2-9afa-11e7-91e3-59988dec40c9.png" alt="img" class="img" />
           中后台网站
         </div>
       </router-link>

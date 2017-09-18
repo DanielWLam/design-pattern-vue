@@ -1,14 +1,15 @@
 <template>
-  <div class="font read markdown-body">
-    <h1 id="字体"><a class="header-link" href="#字体"></a>字体</h1>
-    <p>字体的选择，要保证在不同的平台下都能有最佳的展示效果。</p>
-    <p>字体是网页中最基本也是最重要的构成之一，用户通过字体理解网站想要传达的信息，是网站与人交互的重要输出手段。</p>
-    <h2 id="字形"><a class="header-link" href="#字形"></a>字形</h2>
-    <p>在字体的选择上，推荐使用以下规则，</p>
-    <pre class="hljs"><code>{
+  <div class="font read">
+    <article class="markdown-body">
+      <h1 id="字体"><a class="header-link" href="#字体"></a>字体</h1>
+      <p>字体的选择，要保证在不同的平台下都能有最佳的展示效果。</p>
+      <p>字体是网页中最基本也是最重要的构成之一，用户通过字体理解网站想要传达的信息，是网站与人交互的重要输出手段。</p>
+      <h2 id="字形"><a class="header-link" href="#字形"></a>字形</h2>
+      <p>在字体的选择上，推荐使用以下规则，</p>
+      <pre class="hljs"><code>{
   <span class="hljs-attribute">font-family</span>: -apple-system, BlinkMacSystemFont, <span class="hljs-string">"Segoe UI"</span>, Roboto,
     <span class="hljs-string">"Helvetica Neue"</span>, Helvetica, <span class="hljs-string">"PingFang SC"</span>, <span
-        class="hljs-string">"Hiragino Sans GB"</span>, <span class="hljs-string">"Microsoft YaHei"</span>,
+          class="hljs-string">"Hiragino Sans GB"</span>, <span class="hljs-string">"Microsoft YaHei"</span>,
     SimSun, sans-serif;
 }</code></pre>
     <h2 id="字号"><a class="header-link" href="#字号"></a>字号</h2>
@@ -24,10 +25,8 @@
         <img src="https://user-images.githubusercontent.com/8369212/30510681-1c54ae2a-9afb-11e7-81f5-4cdb9d1f01f1.png" alt="img">
       </Col>
     </Row>
+    </article>
   </div>
 </template>
 <style lang="less">
-  .read {
-    font-size: 14px;
-  }
 </style>

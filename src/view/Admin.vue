@@ -12,7 +12,7 @@
         <Col span="3">
           <Menu active-name="welcome" width="auto" :open-names="['threeBase', 'pattern']">
             <router-link :to="{name: 'welcome'}">
-              <MenuItem name="welcome">欢迎！</MenuItem>
+              <MenuItem name="welcome">Fact Design</MenuItem>
             </router-link>
             <Submenu name="threeBase">
               <template slot="title">
@@ -31,12 +31,43 @@
                 <MenuItem name="color">色彩</MenuItem>
               </router-link>
             </Submenu>
-            <MenuItem name="layout">布局</MenuItem>
+            <router-link :to="{name: 'layout'}">
+              <MenuItem name="layout">布局</MenuItem>
+            </router-link>
+            <router-link :to="{name: 'text'}">
+              <MenuItem name="text">文案</MenuItem>
+            </router-link>
+            <router-link :to="{name: 'dialog'}">
+              <MenuItem name="dialog">对话框</MenuItem>
+            </router-link>
+            <router-link :to="{name: 'table'}">
+              <MenuItem name="table">表格</MenuItem>
+            </router-link>
+            <router-link :to="{name: 'card'}">
+              <MenuItem name="card">卡片式设计</MenuItem>
+            </router-link>
+            <router-link :to="{name: 'animate'}">
+              <MenuItem name="animate">动画</MenuItem>
+            </router-link>
+            <router-link :to="{name: 'light'}">
+              <MenuItem name="light">光与阴影</MenuItem>
+            </router-link>
             <Submenu name="pattern">
               <template slot="title">
                 设计原则
               </template>
-              <MenuItem name="closeTheory">亲密性原理</MenuItem>
+              <router-link :to="{name: 'close'}">
+                <MenuItem name="closeTheory">相关性原则</MenuItem>
+              </router-link>
+              <router-link :to="{name: 'repeat'}">
+                <MenuItem name="repeat">重复性原理</MenuItem>
+              </router-link>
+              <router-link :to="{name: 'align'}">
+                <MenuItem name="align">对齐</MenuItem>
+              </router-link>
+              <router-link :to="{name: 'reaction'}">
+                <MenuItem name="reaction">即时反应</MenuItem>
+              </router-link>
             </Submenu>
           </Menu>
         </Col>

@@ -4,6 +4,9 @@
     <p>选好布局，是网站建设的第一步</p>
     <h2 id="常见布局"><a class="header-link" href="#常见布局"></a>常见布局</h2>
     <p>开门见山的说，常见的后台布局有以下几种：</p>
+    <card>
+      hello
+    </card>
     <ol class="list">
       <li>Header + Content + Footer</li>
       <li>Header + Sidebar + Content + Footer</li>
@@ -14,3 +17,11 @@
     </ol>
   </article>
 </template>
+<script>
+  import Card from '../components/Card.vue'
+  export default {
+    components: {
+      Card
+    }
+  }
+</script>

@@ -92,6 +92,7 @@
       <p>另外，需要注意的是，以上配色对于一般的图表如：柱形图，折线图，饼图等比较适用。<br>在涉及热度，有渐变关系的图表时，推荐使用这种配色：</p>
       <ul class="list">
         <li class="chart-color">
+          <img src="" alt="">
           <color-box :color="'#dcecc9'" style="display: inline-block;"></color-box>
           <color-box :color="'#8acdce'" style="display: inline-block;"></color-box>
           <color-box :color="'#62bed2'" style="display: inline-block;"></color-box>
@@ -103,6 +104,7 @@
           <color-box :color="'#1c2b7f'" style="display: inline-block;"></color-box>
         </li>
         <li>
+          <img src="" alt="">
           <color-box :color="'#fded82'" style="display: inline-block;"></color-box>
           <color-box :color="'#fbdc68'" style="display: inline-block;"></color-box>
           <color-box :color="'#f5bc59'" style="display: inline-block;"></color-box>
@@ -114,6 +116,7 @@
           <color-box :color="'#54362f'" style="display: inline-block;"></color-box>
         </li>
         <li>
+          <img src="" alt="">
           <color-box :color="'#f8c7aa'" style="display: inline-block;"></color-box>
           <color-box :color="'#f19b9c'" style="display: inline-block;"></color-box>
           <color-box :color="'#ea708e'" style="display: inline-block;"></color-box>
@@ -125,7 +128,7 @@
           <color-box :color="'#300f45'" style="display: inline-block;"></color-box>
         </li>
       </ul>
-      <p>这三种配色方案是从medium上看到的，灵感的来源是大自然，实际的效果也是棒棒哒。</p>
+      <p>这三种配色方案通过科学调配的渐变与对比度，在实际的应用效果也是棒棒哒。</p>
     </article>
   </div>
 </template>

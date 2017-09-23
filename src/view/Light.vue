@@ -29,6 +29,10 @@
 <script>
   import Card from '../components/card.vue'
   export default {
+    data () {
+      return {
+      }
+    },
     components: {
       Card
     }

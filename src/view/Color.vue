@@ -92,7 +92,7 @@
       <p>另外，需要注意的是，以上配色对于一般的图表如：柱形图，折线图，饼图等比较适用。<br>在涉及热度，有渐变关系的图表时，推荐使用这种配色：</p>
       <ul class="list">
         <li class="chart-color">
-          <img src="" alt="">
+          <img src="../assets/1-B29h3NSglI42HGhWZA-5Mg.png" alt="">
           <color-box :color="'#dcecc9'" style="display: inline-block;"></color-box>
           <color-box :color="'#8acdce'" style="display: inline-block;"></color-box>
           <color-box :color="'#62bed2'" style="display: inline-block;"></color-box>
@@ -103,8 +103,8 @@
           <color-box :color="'#24448e'" style="display: inline-block;"></color-box>
           <color-box :color="'#1c2b7f'" style="display: inline-block;"></color-box>
         </li>
-        <li>
-          <img src="" alt="">
+        <li class="chart-color">
+          <img src="../assets/1-pH2QoOf47OqwtG9suWaRJw.png" alt="">
           <color-box :color="'#fded82'" style="display: inline-block;"></color-box>
           <color-box :color="'#fbdc68'" style="display: inline-block;"></color-box>
           <color-box :color="'#f5bc59'" style="display: inline-block;"></color-box>
@@ -115,8 +115,8 @@
           <color-box :color="'#8a402b'" style="display: inline-block;"></color-box>
           <color-box :color="'#54362f'" style="display: inline-block;"></color-box>
         </li>
-        <li>
-          <img src="" alt="">
+        <li class="chart-color">
+          <img src="../assets/1--Vgr9hPpUU3PYtg_B4rd2g.png" alt="">
           <color-box :color="'#f8c7aa'" style="display: inline-block;"></color-box>
           <color-box :color="'#f19b9c'" style="display: inline-block;"></color-box>
           <color-box :color="'#ea708e'" style="display: inline-block;"></color-box>
@@ -157,6 +157,7 @@
   .chart-color {
     height: 58px;
     padding-top: 8px;
+    display: inline-block;
     li {
       margin: 8px 0;
     }

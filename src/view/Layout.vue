@@ -147,9 +147,6 @@
           <div class="layout-content">
             <div class="layout-content-main">内容区域</div>
           </div>
-          <div class="layout-copy">
-            2011-2016 &copy; TalkingData
-          </div>
           </Col>
         </Row>
       </div>
@@ -161,10 +158,21 @@
     <code>Col</code>组件，<br>把一行分为24列，可以根据元素的需要，自由分配这24列。<br>但要注意，一行排列的元素最好不要超过4个，避免影响视觉上的舒适感。
     <div class="grid-area">
       <Row>
-        <Col span="6"></Col>
-        <Col span="6"></Col>
-        <Col span="6"></Col>
-        <Col span="6"></Col>
+        <Col span="12">col-12</Col>
+        <Col span="12">col-12</Col>
+      </Row>
+      <br>
+      <Row>
+        <Col span="8">col-8</Col>
+        <Col span="8">col-8</Col>
+        <Col span="8">col-8</Col>
+      </Row>
+      <br>
+      <Row>
+        <Col span="6">col-6</Col>
+        <Col span="6">col-6</Col>
+        <Col span="6">col-6</Col>
+        <Col span="6">col-6</Col>
       </Row>
     </div>
   </article>
@@ -275,14 +283,19 @@ export default {
 }
 </style>
 <style lang="less">
-  .grid-area {
-    .ivu-row {
-      background-color: #4a4a4a;
-      height: 50px;
-    }
-    .ivu-col {
-      background-color: rgba(16, 142, 233, 0.5);
-      height: 50px;
-    }
+.grid-area {
+  margin-top: 16px;
+  .ivu-row {
+    background-color: #ffffff;
+    height: 50px;
   }
+  .ivu-col {
+    background-color: rgba(16, 142, 233, 0.5);
+    height: 50px;
+    line-height: 50px;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+  }
+}
 </style>

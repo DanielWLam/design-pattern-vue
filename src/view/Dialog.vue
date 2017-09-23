@@ -9,7 +9,7 @@
     </ol>
     <h2 id="构成"><a class="header-link" href="#构成"></a>构成</h2>
     <ol class="list">
-      <li>头部title</li>
+      <li>头部标题</li>
       <li>内容</li>
       <li>底部操作栏</li>
     </ol>

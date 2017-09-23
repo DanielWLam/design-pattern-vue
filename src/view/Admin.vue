@@ -97,7 +97,7 @@
     margin: 0 24px;
   }
   .main-content {
-    padding: 0 24px;
+    padding: 0 24px 24px;
   }
   .ivu-menu {
     a {

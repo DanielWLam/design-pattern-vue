@@ -133,7 +133,7 @@
   </div>
 </template>
 <script>
-  import ColorBox from '../components/ColorBox.vue'
+  import ColorBox from '../components/colorBox.vue'
   export default {
     components: {
       ColorBox

@@ -21,6 +21,9 @@
         <code>14px</code>， 对于中后台系统，选择
         <code>12px</code>可以保证在视觉上，系统比较精致。 对于展示型的页面，选择
         <code>14px</code>大小的字体保障了可阅读性。</p>
+      <div class="img-box">
+        <img src="https://zos.alipayobjects.com/rmsportal/UkvKkdJgvFqlewCWFyQE.png" alt="">
+      </div>
       <h2 id="字体颜色">
         <a class="header-link" href="#字体颜色"></a>字体颜色</h2>
       <Row>

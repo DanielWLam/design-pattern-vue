@@ -59,8 +59,8 @@
   </article>
 </template>
 <script>
-import ColorBox from '../components/ColorBox.vue'
-import Card from '../components/Card.vue'
+import ColorBox from '../components/colorBox.vue'
+import Card from '../components/card.vue'
 export default {
   components: {
     ColorBox,

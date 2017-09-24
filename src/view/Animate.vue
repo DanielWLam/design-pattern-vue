@@ -50,7 +50,7 @@
   </article>
 </template>
 <script>
-import Card from '../components/Card.vue'
+import Card from '../components/card.vue'
 export default {
   components: {
     Card

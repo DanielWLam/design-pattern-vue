@@ -11,9 +11,6 @@
 </template>
 <script>
 export default {
-  mounted () {
-    console.log(this.$slots, '===')
-  }
 }
 </script>
 <style lang="less" scoped>
@@ -23,7 +20,7 @@ export default {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
   border-radius: 2px;
-  overflow: hidden; 
+  overflow: hidden;
   &:hover {
    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }

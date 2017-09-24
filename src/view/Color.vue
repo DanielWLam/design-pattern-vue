@@ -79,53 +79,57 @@
       <h2 id="图表配色">
         <a class="header-link" href="#图表配色"></a>图表配色</h2>
       <p>图标配色其实并没有一个非常通用的一定好看的配色，因为这与网站的主色调有关系。但在参考了大量业界的方案后，这里可以给出一个供参考的配色方案：</p>
-      <ul class="list">
-        <li class="chart-color">
-          <color-box :color="'#4990e2'" style="display: inline-block;"></color-box>
-          <color-box :color="'#44b549'" style="display: inline-block;"></color-box>
-          <color-box :color="'#eccb6c'" style="display: inline-block;"></color-box>
-          <color-box :color="'#bd80a9'" style="display: inline-block;"></color-box>
-          <color-box :color="'#da7036'" style="display: inline-block;"></color-box>
-          <color-box :color="'#7ac5d8'" style="display: inline-block;"></color-box>
-        </li>
-      </ul>
+      <div>
+        <color-box :color="'#4990e2'" style="float: left; margin-left: 8px;"></color-box>
+        <color-box :color="'#44b549'" style="float: left; margin-left: 8px;"></color-box>
+        <color-box :color="'#eccb6c'" style="float: left; margin-left: 8px;"></color-box>
+        <color-box :color="'#bd80a9'" style="float: left; margin-left: 8px;"></color-box>
+        <color-box :color="'#da7036'" style="float: left; margin-left: 8px;"></color-box>
+        <color-box :color="'#7ac5d8'" style="float: left; margin-left: 8px;"></color-box>
+      </div>
       <p>另外，需要注意的是，以上配色对于一般的图表如：柱形图，折线图，饼图等比较适用。<br>在涉及热度，有渐变关系的图表时，推荐使用这种配色：</p>
       <ul class="list">
-        <li class="chart-color">
+        <li class="chart-color" style="margin-bottom: 16px;">
           <img src="../assets/1-B29h3NSglI42HGhWZA-5Mg.png" alt="">
-          <color-box :color="'#dcecc9'" style="display: inline-block;"></color-box>
-          <color-box :color="'#8acdce'" style="display: inline-block;"></color-box>
-          <color-box :color="'#62bed2'" style="display: inline-block;"></color-box>
-          <color-box :color="'#46aace'" style="display: inline-block;"></color-box>
-          <color-box :color="'#3d91be'" style="display: inline-block;"></color-box>
-          <color-box :color="'#3577ae'" style="display: inline-block;"></color-box>
-          <color-box :color="'#2d5e9e'" style="display: inline-block;"></color-box>
-          <color-box :color="'#24448e'" style="display: inline-block;"></color-box>
-          <color-box :color="'#1c2b7f'" style="display: inline-block;"></color-box>
-        </li>
-        <li class="chart-color">
-          <img src="../assets/1-pH2QoOf47OqwtG9suWaRJw.png" alt="">
-          <color-box :color="'#fded82'" style="display: inline-block;"></color-box>
-          <color-box :color="'#fbdc68'" style="display: inline-block;"></color-box>
-          <color-box :color="'#f5bc59'" style="display: inline-block;"></color-box>
-          <color-box :color="'#ef9c49'" style="display: inline-block;"></color-box>
-          <color-box :color="'#e97e3b'" style="display: inline-block;"></color-box>
-          <color-box :color="'#e45e2d'" style="display: inline-block;"></color-box>
-          <color-box :color="'#c04b29'" style="display: inline-block;"></color-box>
-          <color-box :color="'#8a402b'" style="display: inline-block;"></color-box>
-          <color-box :color="'#54362f'" style="display: inline-block;"></color-box>
+          <div>
+            <color-box :color="'#dcecc9'" style="display: inline-block;"></color-box>
+            <color-box :color="'#8acdce'" style="display: inline-block;"></color-box>
+            <color-box :color="'#62bed2'" style="display: inline-block;"></color-box>
+            <color-box :color="'#46aace'" style="display: inline-block;"></color-box>
+            <color-box :color="'#3d91be'" style="display: inline-block;"></color-box>
+            <color-box :color="'#3577ae'" style="display: inline-block;"></color-box>
+            <color-box :color="'#2d5e9e'" style="display: inline-block;"></color-box>
+            <color-box :color="'#24448e'" style="display: inline-block;"></color-box>
+            <color-box :color="'#1c2b7f'" style="display: inline-block;"></color-box>
+          </div>
         </li>
         <li class="chart-color">
           <img src="../assets/1--Vgr9hPpUU3PYtg_B4rd2g.png" alt="">
-          <color-box :color="'#f8c7aa'" style="display: inline-block;"></color-box>
-          <color-box :color="'#f19b9c'" style="display: inline-block;"></color-box>
-          <color-box :color="'#ea708e'" style="display: inline-block;"></color-box>
-          <color-box :color="'#d54d88'" style="display: inline-block;"></color-box>
-          <color-box :color="'#a73b8f'" style="display: inline-block;"></color-box>
-          <color-box :color="'#7a2995'" style="display: inline-block;"></color-box>
-          <color-box :color="'#5b1f84'" style="display: inline-block;"></color-box>
-          <color-box :color="'#451764'" style="display: inline-block;"></color-box>
-          <color-box :color="'#300f45'" style="display: inline-block;"></color-box>
+          <div>
+            <color-box :color="'#fded82'" style="display: inline-block;"></color-box>
+            <color-box :color="'#fbdc68'" style="display: inline-block;"></color-box>
+            <color-box :color="'#f5bc59'" style="display: inline-block;"></color-box>
+            <color-box :color="'#ef9c49'" style="display: inline-block;"></color-box>
+            <color-box :color="'#e97e3b'" style="display: inline-block;"></color-box>
+            <color-box :color="'#e45e2d'" style="display: inline-block;"></color-box>
+            <color-box :color="'#c04b29'" style="display: inline-block;"></color-box>
+            <color-box :color="'#8a402b'" style="display: inline-block;"></color-box>
+            <color-box :color="'#54362f'" style="display: inline-block;"></color-box>
+          </div>
+        </li>
+        <li class="chart-color">
+          <img src="../assets/1-pH2QoOf47OqwtG9suWaRJw.png" alt="">
+          <div>
+            <color-box :color="'#f8c7aa'" style="display: inline-block;"></color-box>
+            <color-box :color="'#f19b9c'" style="display: inline-block;"></color-box>
+            <color-box :color="'#ea708e'" style="display: inline-block;"></color-box>
+            <color-box :color="'#d54d88'" style="display: inline-block;"></color-box>
+            <color-box :color="'#a73b8f'" style="display: inline-block;"></color-box>
+            <color-box :color="'#7a2995'" style="display: inline-block;"></color-box>
+            <color-box :color="'#5b1f84'" style="display: inline-block;"></color-box>
+            <color-box :color="'#451764'" style="display: inline-block;"></color-box>
+            <color-box :color="'#300f45'" style="display: inline-block;"></color-box>
+          </div>
         </li>
       </ul>
       <p>这三种配色方案通过科学调配的渐变与对比度，在实际的应用效果也是棒棒哒。</p>
@@ -155,7 +159,6 @@
     }
   }
   .chart-color {
-    height: 58px;
     padding-top: 8px;
     display: inline-block;
     li {

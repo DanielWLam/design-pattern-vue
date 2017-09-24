@@ -9,9 +9,9 @@
           中后台网站
         </div>
       </router-link>
-      <div class="btn">
-        展示型网站
-      </div>
+      <!--<div class="btn">-->
+        <!--展示型网站-->
+      <!--</div>-->
     </div>
   </div>
 </template>
@@ -97,12 +97,14 @@ export default {
       font-size: 32px;
     }
     .choose {
-      width: 500px;
+      /*width: 500px;*/
       position: absolute;
       top: 50%;
       left: 50%;
-      margin-left: -250px;
       margin-top: -50px;
+      margin-left: -129px;
+      /*margin-left: -250px;*/
+      /*margin-top: -50px;*/
       .btn {
         color: #ffffff;
         border: 1px solid #efefef;

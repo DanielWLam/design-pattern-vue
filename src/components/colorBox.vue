@@ -1,5 +1,5 @@
 <template>
-  <div class="color-box" :data-clipboard-text="color" :style="{'background-color': color, color: fontColor}" @click="clipColor">
+  <div class="color-box" :class="{'no-hover': noHover}" :data-clipboard-text="color" :style="{'background-color': color, color: fontColor}" @click="clipColor">
     <span>{{color}}</span>
   </div>
 </template>
@@ -11,6 +11,12 @@ export default {
       type: String,
       default() {
         return '#ffffff'
+      }
+    },
+    noHover: {
+      type: Boolean,
+      default () {
+        return false
       }
     }
   },
@@ -62,6 +68,13 @@ export default {
   &:hover {
     margin-top: -8px;
     height: 58px;
+    span {
+      opacity: 1;
+    }
+  }
+  &.no-hover:hover {
+    margin-top: 0;
+    height: 50px;
     span {
       opacity: 1;
     }

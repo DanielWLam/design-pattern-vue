@@ -10,11 +10,8 @@ import './assets/hljs-github.min.css'
 import 'iview/dist/styles/iview.css'
 import './assets/style.less'
 
-import VueMarkdown from 'vue-markdown'
-
 Vue.config.productionTip = false
 Vue.use(iView)
-Vue.component('vue-markdown', VueMarkdown)
 
 /* eslint-disable no-new */
 new Vue({

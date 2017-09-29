@@ -11,43 +11,45 @@
       <h2 id="网站主色">
         <a class="header-link" href="#网站主色"></a>网站主色</h2>
       <p>根据网站定位和色彩的含义，选择一个主配色。界面用色，不建议超过3种（数据图表除外）。<br>不同的颜色代表了不同的感情色彩，一般来说：</p>
-      <Row>
-        <Col span="24">
-          <ul class="list">
-            <li>
-              <color-box :color="'#f04134'"></color-box>
-              红色：热情、警示
-            </li>
-            <li>
-              <color-box :color="'#00a854'"></color-box>
-              绿色：成功，通过，安全
-            </li>
-            <li>
-              <color-box :color="'#108ee9'"></color-box>
-              蓝色：专业，科技
-            </li>
-            <li><color-box :color="'#ffbf00'"></color-box>黄色：活力，警告</li>
-            <li><color-box :color="'#f5317f'"></color-box>粉色：女性，典雅</li>
-            <li><color-box :color="'#f56a00'"></color-box>橙色：温暖，活泼</li>
-            <li><color-box :color="'#7265e6'"></color-box>紫色：高雅，浪漫</li>
-            <li><color-box :color="'#00a2ae'"></color-box>青色：小清新</li>
-            <li><color-box :color="'#bfbfbf'"></color-box>灰色：中性，不可用 </li>
-          </ul>
-        </Col>
-      </Row>
+      <template v-for="(item, index) in colorBoardData">
+        <Row :key="'name' + index" style="text-align: center">
+          <Col span="24"> {{item.name}}
+          </Col>
+        </Row>
+        <Row :key="'row' + index" :gutter="16">
+          <Col span="3" :key=cIndex v-for="(color, cIndex) in item.colors">
+            <color-box :color="color"></color-box>
+          </Col>
+        </Row>
+      </template>
+
+      <ul class="list">
+        <li>
+          <color-box :color="'#ffbf00'"></color-box>黄色：活力，警告</li>
+        <li>
+          <color-box :color="'#f5317f'"></color-box>粉色：女性，典雅</li>
+        <li>
+          <color-box :color="'#f56a00'"></color-box>橙色：温暖，活泼</li>
+        <li>
+          <color-box :color="'#7265e6'"></color-box>紫色：高雅，浪漫</li>
+        <li>
+          <color-box :color="'#00a2ae'"></color-box>青色：小清新</li>
+        <li>
+          <color-box :color="'#bfbfbf'"></color-box>灰色：中性，不可用 </li>
+      </ul>
       <Row>
         <Col span="12">
-          <p>同时，颜色的深浅带来的感受也不一样，比较浅的颜色，给人感觉更清新。深色给人感觉沉稳但乏味。合理地选择颜色的深浅对网站整理艺术风格至关重要。</p>
+        <p>同时，颜色的深浅带来的感受也不一样，比较浅的颜色，给人感觉更清新。深色给人感觉沉稳但乏味。合理地选择颜色的深浅对网站整理艺术风格至关重要。</p>
         </Col>
         <Col span="12">
-          <div style="text-align: center;">
-            <color-box :color="'#ff6666'" style="display: inline-block;"></color-box>
-            浅色
-          </div>
-          <div style="text-align: center;margin-top: 8px;">
-            <color-box :color="'#f04134'" style="display: inline-block;"></color-box>
-            深色
-          </div>
+        <div style="text-align: center;">
+          <color-box :color="'#ff6666'" style="display: inline-block;"></color-box>
+          浅色
+        </div>
+        <div style="text-align: center;margin-top: 8px;">
+          <color-box :color="'#f04134'" style="display: inline-block;"></color-box>
+          深色
+        </div>
         </Col>
       </Row>
       <h2 id="功能色">
@@ -79,7 +81,7 @@
       <h2 id="图表配色">
         <a class="header-link" href="#图表配色"></a>图表配色</h2>
       <p>图标配色其实并没有一个非常通用的一定好看的配色，因为这与网站的主色调有关系。但在参考了大量业界的方案后，这里可以给出一个供参考的配色方案：</p>
-      <div>
+      <div style="overflow: auto">
         <color-box :color="'#4990e2'" style="float: left; margin-left: 8px;"></color-box>
         <color-box :color="'#44b549'" style="float: left; margin-left: 8px;"></color-box>
         <color-box :color="'#eccb6c'" style="float: left; margin-left: 8px;"></color-box>
@@ -87,11 +89,11 @@
         <color-box :color="'#da7036'" style="float: left; margin-left: 8px;"></color-box>
         <color-box :color="'#7ac5d8'" style="float: left; margin-left: 8px;"></color-box>
       </div>
-      <p>另外，需要注意的是，以上配色对于一般的图表如：柱形图，折线图，饼图等比较适用。<br>在涉及热度，有渐变关系的图表时，推荐使用这种配色：</p>
+      <p style="margin-top: 16px">另外，需要注意的是，以上配色对于一般的图表如：柱形图，折线图，饼图等比较适用。<br>在涉及热度，有渐变关系的图表时，推荐使用这种配色：</p>
       <ul class="list">
         <li class="chart-color" style="margin-bottom: 16px;">
           <img src="../assets/1-B29h3NSglI42HGhWZA-5Mg.png" alt="">
-          <div>
+          <div class="inline-color">
             <color-box :color="'#dcecc9'" style="display: inline-block;"></color-box>
             <color-box :color="'#8acdce'" style="display: inline-block;"></color-box>
             <color-box :color="'#62bed2'" style="display: inline-block;"></color-box>
@@ -105,7 +107,7 @@
         </li>
         <li class="chart-color">
           <img src="../assets/1--Vgr9hPpUU3PYtg_B4rd2g.png" alt="">
-          <div>
+          <div class="inline-color">
             <color-box :color="'#fded82'" style="display: inline-block;"></color-box>
             <color-box :color="'#fbdc68'" style="display: inline-block;"></color-box>
             <color-box :color="'#f5bc59'" style="display: inline-block;"></color-box>
@@ -119,7 +121,7 @@
         </li>
         <li class="chart-color">
           <img src="../assets/1-pH2QoOf47OqwtG9suWaRJw.png" alt="">
-          <div>
+          <div class="inline-color">
             <color-box :color="'#f8c7aa'" style="display: inline-block;"></color-box>
             <color-box :color="'#f19b9c'" style="display: inline-block;"></color-box>
             <color-box :color="'#ea708e'" style="display: inline-block;"></color-box>
@@ -137,32 +139,93 @@
   </div>
 </template>
 <script>
-  import ColorBox from '../components/colorBox.vue'
-  export default {
-    components: {
-      ColorBox
+import ColorBox from '../components/colorBox.vue'
+export default {
+  data() {
+    return {
+      colorBoardData: [
+        {
+          name: '红色：热情，告警，危险',
+          colors: ['#fef0ef', '#fcdbd9', '#fabeb9', '#f79992', '#f46e65', '#f04134', '#d73435', '#bd2636']
+        },
+        {
+          name: '绿色：成功，通过，安全',
+          colors: ['#fef0ef', '#fcdbd9', '#fabeb9', '#f79992', '#f46e65', '#f04134', '#d73435', '#bd2636']
+        },
+        {
+          name: '蓝色：专业，科技',
+          colors: ['#fef0ef', '#fcdbd9', '#fabeb9', '#f79992', '#f46e65', '#f04134', '#d73435', '#bd2636']
+        },
+        {
+          name: '黄色：活力，警告',
+          colors: ['#fef0ef', '#fcdbd9', '#fabeb9', '#f79992', '#f46e65', '#f04134', '#d73435', '#bd2636']
+        },
+        {
+          name: '粉色：女性，典雅',
+          colors: ['#fef0ef', '#fcdbd9', '#fabeb9', '#f79992', '#f46e65', '#f04134', '#d73435', '#bd2636']
+        },
+        {
+          name: '橙色：温暖，活泼',
+          colors: ['#fef0ef', '#fcdbd9', '#fabeb9', '#f79992', '#f46e65', '#f04134', '#d73435', '#bd2636']
+        },
+        {
+          name: '紫色：高雅，浪漫',
+          colors: ['#fef0ef', '#fcdbd9', '#fabeb9', '#f79992', '#f46e65', '#f04134', '#d73435', '#bd2636']
+        },
+        {
+          name: '青色：小清新',
+          colors: ['#fef0ef', '#fcdbd9', '#fabeb9', '#f79992', '#f46e65', '#f04134', '#d73435', '#bd2636']
+        },
+        {
+          name: '灰色：中性，不可用',
+          colors: ['#fef0ef', '#fcdbd9', '#fabeb9', '#f79992', '#f46e65', '#f04134', '#d73435', '#bd2636']
+        }
+      ]
     }
+  },
+  components: {
+    ColorBox
   }
+}
 </script>
 <style lang="less" scoped>
-  .list {
-    li {
-      margin-bottom: 8px;
-    }
+@import "../assets/ant-color/colorPalette.less";
+.list {
+  li {
+    margin-bottom: 8px;
   }
-  .function-color {
-    span {
-      width: 55px;
-      text-align: right;
-      margin-right: 8px;
-      display: inline-block;
-    }
-  }
-  .chart-color {
-    padding-top: 8px;
+}
+
+.function-color {
+  span {
+    width: 55px;
+    text-align: right;
+    margin-right: 8px;
     display: inline-block;
-    li {
-      margin: 8px 0;
-    }
   }
+}
+
+.chart-color {
+  padding-top: 8px;
+  display: inline-block;
+  li {
+    margin: 8px 0;
+  }
+}
+
+.inline-color {
+  overflow: visible;
+  .color-box {
+    float: left;
+    margin-left: 8px;
+    margin-top: 8px;
+  }
+}
+// @blue-1: color(~`colorPalette("@{blue-6}", 1)`);
+// @blue-6: #108ee9;
+// .test {
+//   background-color: color(~`colorPalette("#ff6666", 1)`);
+//   width: 60px;
+//   height: 60px;
+// }
 </style>
